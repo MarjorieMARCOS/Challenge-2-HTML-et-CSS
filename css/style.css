@@ -1,0 +1,134 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.hearder__logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.header__titre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    border-top: 3px solid #750000;
+    border-bottom: 3px solid #750000;
+    width: 1000px;
+}
+
+.header__titre--normal {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: .2rem;
+    font-size: 70px;
+}
+.header__titre--black {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    font-size: 20px;
+    height: 35px;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    position: relative;
+    top: 40px; left: 5px;
+}
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #EEEEEE;
+    margin: 20px 70px;
+  }
+
+.main__titreun, .acteur__titre {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    margin: 20px 0px;    
+}
+.main__logo > img {
+    width: 100px;
+}
+.bold {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+.main__premierp {
+    font-family: 'Abel', sans-serif;
+    font-weight: 600;
+    margin: 20px 0px;
+    padding-bottom: 30px;
+    font-size: 17px;
+    border-bottom: 1px solid #000000;
+}
+.main__logo {
+    margin: 20px 0px;
+}
+
+.main__deuxiemep {
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    font-style: italic;
+    margin: 20px 0px;
+}
+
+.main__titredeux {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    color: #5A010C;
+    margin: 20px 0px;
+    font-weight: 500;
+}
+.troisiemep, .main__quatriemp, .main__cinquiemep {
+    font-family: 'Abel', sans-serif;
+    font-weight: 600;
+    margin: 20px 0px;
+    font-size: 17px;
+}
+.footer__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+    font-weight: 600;
+    background-color: #EEEEEE;
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+
+.acteur {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Abel', sans-serif;
+    font-weight: 600;
+}
+
+.acteur__nom {
+    display: flex;
+    justify-content: center;
+    background-color: #EEEEEE;
+    width: 600px;
+    margin: 5px;
+    color: #750000;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 15px;
+}
