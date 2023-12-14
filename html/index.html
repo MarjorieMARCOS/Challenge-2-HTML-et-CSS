@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr" dir="ltr">
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,80 +7,115 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=oswald:600" rel="stylesheet" />
-    <link href="https://fonts.bunny.net/css?family=abel:400" rel="stylesheet" />
+    <link href="https://fonts.bunny.net/css?family=oswald:400" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/455d0daaed.js" crossorigin="anonymous"></script>
     <title>Herocorp</title>
 </head>
 <body>
-    <header class="header">
-        <nav>
-            <div class="hearder__logo"><img src="../images/hc.png" alt="Logo de la série"></div>
-                <div class="header__titre">
-                <div class="header__titre--normal">Hero Corp</div>
-                <div class="header__titre--black">La série</div>
-                <div class="header__ti"></div>
-                </div>
+    <header>
+        <nav class="header">
+            <div aria-label="logo" class="hearder__logo"><img src="../images/hc.png" alt="Logo de la série"></div>
+            <div class="header__titre">
+                <h1 class="header__titre--normal">Hero Corp</h1>
+                <span class="header__titre--black">La série</span>
+            </div>
         </nav>
     </header>
-    <main class="main">
-        <h1 class="main__titreun">Présentation</h1>
-        <div class="main__logo"><img src="../images/hc-logo.png" alt="Logo de la série"></div>
-        <p class="main__premierp"><span class="bold">Hero Corp </span>est une série télévisée française fantastique et humoristique, produite par CALT, 
-        créée par Simon Astier et Alban Lenoir, réalisée par Simon Astier et écrite par Arnaud Joyet et Simon Astier.
-        </p>
-        <p class="main__deuxiemep">Les deux premières saisons ont été diffusées du 25 octobre 2008 au 29 janvier 2010 sur Comédie+ et rediffusées 
-        sur France 4 et Game One. La troisième saison a été diffusée sur France 4 du 21 octobre 2013 au 6 décembre 2013. 
-        La quatrième saison a été, quant à elle, diffusée du 19 décembre 2014 au 23 janvier 2015 sur France 4 et à partir 
-        du 9 février 2015 sur Game One. Une cinquième et dernière saison a été diffusée sur France 4 du 24 mai 2017 au 7 juin 2017.
-        </p>
-        <h1 class="main__titredeux">Synopsis</h1>
-        <p class="troisiemep">À la suite d’une guerre dans les années 1980, il est décidé de créer l’agence Hero Corp, une organisation regroupant tous 
-        les super-héros afin de maintenir un climat de paix. Cette agence possède plusieurs sites secrets sur la planète et dans le 
-        département de la Lozère se trouvent les retraités, mis au rancart, démissionnaires, démasqués, pas-formés. Coupés du monde, 
-        ils peuvent retrouver une vie calme et paisible. Vingt ans après, ce calme paisible vole en éclats lorsque réapparaît The Lord.</p>
-
-        <p class="main__quatriemp">Face au retour de The Lord, le plus grand super-vilain de l’Histoire, le village est démuni. Selon une prédiction, John est l'unique 
-        solution face à ce danger que Hero Corp préfère garder sous silence.</p>
-            
-        <p class="main__cinquiemep">John arrive dans un village isolé pour aller enterrer sa tante. Il se rend compte que les habitants cachent quelque chose et qu’ils 
-        n’ont pas l’air décidés à le laisser partir.</p>
-    </main>
-    <section class="acteur">
-        <h1 class="acteur__titre">Principaux acteurs</h1>
-    
-        <p class="acteur__nom"><a href="https://fr.wikipedia.org/wiki/Simon_Astier" target="_blank">simon astier</a>
-        </p>
-
-        <p class="acteur__nom"><a href="https://fr.wikipedia.org/wiki/Alban_Lenoir" target="_blank">alban lenoir</a>
-        </p>
-
-        <p class="acteur__nom"><a href="https://fr.wikipedia.org/wiki/S%C3%A9bastien_Lalanne" target="_blank">sébastien lalanne</a>
+    <section aria-label="presentation__serie">
+        <article aria-label="presentation__serie" class="presentation">
+            <h2 class="presentation__titreun">Présentation</h2>
+            <div aria-label="logo" class="presentation__logo"><img src="../images/hc-logo.png" alt="Logo de la série"></div>
+            <p class="presentation__premierparagraphe"><span class="bold">Hero Corp </span>est une série télévisée française fantastique et humoristique, produite par CALT, 
+            créée par Simon Astier et Alban Lenoir, réalisée par Simon Astier et écrite par Arnaud Joyet et Simon Astier.
             </p>
+            <p class="presentation__deuxiemeparagraphe">Les deux premières saisons ont été diffusées du 25 octobre 2008 au 29 janvier 2010 sur Comédie+ et rediffusées 
+            sur France 4 et Game One. La troisième saison a été diffusée sur France 4 du 21 octobre 2013 au 6 décembre 2013. 
+            La quatrième saison a été, quant à elle, diffusée du 19 décembre 2014 au 23 janvier 2015 sur France 4 et à partir 
+            du 9 février 2015 sur Game One. Une cinquième et dernière saison a été diffusée sur France 4 du 24 mai 2017 au 7 juin 2017.
+            </p>
+        </article>
+
+        <article aria-label="presentation__sysnopsis" class="presentation">
+            <h2 class="presentation__titredeux">Synopsis</h2>
+            <p class="troisiemeparagraphe">À la suite d’une guerre dans les années 1980, il est décidé de créer l’agence Hero Corp, une organisation regroupant tous 
+            les super-héros afin de maintenir un climat de paix. Cette agence possède plusieurs sites secrets sur la planète et dans le 
+            département de la Lozère se trouvent les retraités, mis au rancart, démissionnaires, démasqués, pas-formés. Coupés du monde, 
+            ils peuvent retrouver une vie calme et paisible. Vingt ans après, ce calme paisible vole en éclats lorsque réapparaît The Lord.</p>
+
+            <p class="presentation__quatriemparagraphe">Face au retour de The Lord, le plus grand super-vilain de l’Histoire, le village est démuni. Selon une prédiction, John est l'unique 
+            solution face à ce danger que Hero Corp préfère garder sous silence.</p>
+            
+            <p class="presentation__cinquiemeparagraphe">John arrive dans un village isolé pour aller enterrer sa tante. Il se rend compte que les habitants cachent quelque chose et qu’ils 
+            n’ont pas l’air décidés à le laisser partir.</p>
+        </article>
+    </section>
     
-        <p class="acteur__nom"><a href="https://fr.wikipedia.org/wiki/G%C3%A9rard_Darier" target="_blank">gérard darier</a>
-        </p>
+    <section aria-label="presentation__acteurs" class="acteur">
+        <h2 class="acteur__titre">Principaux acteurs</h2>
+        <ul>
+            <li class="acteur__nom"><a href="https://fr.wikipedia.org/wiki/Simon_Astier" target="_blank">simon astier <i class="fa-solid fa-up-right-from-square"></i></a>
+            </li>
+
+            <li class="acteur__nom"><a href="https://fr.wikipedia.org/wiki/Alban_Lenoir" target="_blank">alban lenoir <i class="fa-solid fa-up-right-from-square"></i></a>
+            </li>
+
+            <li class="acteur__nom"><a href="https://fr.wikipedia.org/wiki/S%C3%A9bastien_Lalanne" target="_blank">sébastien lalanne <i class="fa-solid fa-up-right-from-square"></i></a>
+            </li>
+    
+            <li class="acteur__nom"><a href="https://fr.wikipedia.org/wiki/G%C3%A9rard_Darier" target="_blank">gérard darier <i class="fa-solid fa-up-right-from-square"></i></a>
+            </li>
    
-        <p class="acteur__nom"><a href="https://fr.wikipedia.org/wiki/Agn%C3%A8s_Boury" target="_blank">agnès boury</a>
-        </p>
+            <li class="acteur__nom"><a href="https://fr.wikipedia.org/wiki/Agn%C3%A8s_Boury" target="_blank">agnès boury <i class="fa-solid fa-up-right-from-square"></i></a>
+            </li>
     
-        <p class="acteur__nom"><a href="https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Podetti" target="_blank">françois podetti</a>
-        </p>
+            <li class="acteur__nom"><a href="https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Podetti" target="_blank">françois podetti <i class="fa-solid fa-up-right-from-square"></i></a>
+            </li>
     
-        <p class="acteur__nom"><a href="https://fr.wikipedia.org/wiki/Arnaud_Joyet" target="_blank">arnaud joyet</a>
-        </p>
+            <li class="acteur__nom"><a href="https://fr.wikipedia.org/wiki/Arnaud_Joyet" target="_blank">arnaud joyet <i class="fa-solid fa-up-right-from-square"></i></a>
+            </li>
     
-        <p class="acteur__nom"><a href="https://fr.wikipedia.org/wiki/Philippe_No%C3%ABl" target="_blank">philippe noël</a>
-        </p>
+            <li class="acteur__nom"><a href="https://fr.wikipedia.org/wiki/Philippe_No%C3%ABl" target="_blank">philippe noël <i class="fa-solid fa-up-right-from-square"></i></a>
+            </li>
     
-        <p class="acteur__nom"><a href="https://fr.wikipedia.org/wiki/%C3%89tienne_Fague" target="_blank">etienne fague</a>
-        </p>
+            <li class="acteur__nom"><a href="https://fr.wikipedia.org/wiki/%C3%89tienne_Fague" target="_blank">etienne fague <i class="fa-solid fa-up-right-from-square"></i></a>
+            </li>
     
-        <p class="acteur__nom"><a href="https://fr.wikipedia.org/wiki/Aurore_Pourteyron" target="_blank">aurore pourteyron</a>
-        </p>
+            <li class="acteur__nom"><a href="https://fr.wikipedia.org/wiki/Aurore_Pourteyron" target="_blank">aurore pourteyron <i class="fa-solid fa-up-right-from-square"></i></a>
+            </li>
+        </ul>
     </section>
 
-    <footer>
-        <div class="footer__text">Présentation de Hero Corp, la série © Hero Corp</div>
-    
+    <section class="photo">
+        <h2 class="photo__titre">Quelques images de la série</h2>
+        <section class="photo__détail">
+            <section class="photo__explication">
+                <figure class="photo__explication__image">
+                    <a href="../images/groupe.jpg" target="_blank"><img src="../images/groupe.jpg" alt="Les personnages de la série sans costume"></a>
+                </figure>
+                <h3 class="photo__explication__titre">Pret à l'action</h3>
+                <p>La fine équipe du début de k'aventure</p>
+            </section>
+            <section class="photo__explication">
+                <figure class="photo__explication__image">
+                    <a href="../images/hc-logo.png" target="_blank"><img src="../images/hc-logo.png" alt="Le logo de la série"></a>
+                </figure>
+                <h3 class="photo__explication__titre">Logo</h3>
+                <p>Logo de la célèbre ligue des justiciers</p>
+            </section>
+            <section class="photo__explication">
+                <figure class="photo__explication__image">
+                    <a href="../images/groupe-costumes.jpg" target="_blank"><img src="../images/groupe-costumes.jpg" alt="Les personnages de la série en costume"></a>
+                </figure>
+                <h3 class="photo__explication__titre">En costume</h3>
+                <p>Les vaillabts justiciers de Hero Corp en costume</p>
+            </section>
+    </section>
+
+
+    </section>
+
+    <footer class="footer__text">
+        Présentation de Hero Corp, la série © Hero Corp
 </footer>
 </body>
 </html>
