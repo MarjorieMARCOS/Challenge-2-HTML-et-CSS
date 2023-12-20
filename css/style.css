@@ -3,7 +3,10 @@
     --main-color: #5A010C;
 }
 body {
-    height: 100vh;
+    /*height: 100vh;
+    C'est intéressant que si tu veux que le contenu soit visible 
+    sur l'écran sans qu'on ait besoin de scroller
+    */
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -279,6 +282,7 @@ body {
 
 /**********REGROUPEMENT DE STYLE************/
 
+
 .photo h2, .photo__explication__titre, .photo__explication__titre + p {
     font-family: var(--main-font);
 }
@@ -318,8 +322,11 @@ body {
 footer {
     display: flex;
     justify-content: center;
-    width: 100vw;
-    margin: 0 20px;
+    /*width: 100vw;
+    sans ça cela va s'adapter aux besoins de ses enfants
+    */
+    /* pourquoi un margin 0 20px ?*/
+   
 }
 
 .footer__text {
