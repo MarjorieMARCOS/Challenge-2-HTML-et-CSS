@@ -77,34 +77,34 @@
 .presentation {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding: 20px;
     background-color: #EEEEEE;
-    margin: 20px 70px;
+    margin: 20px 20px;
+    width: 100vw;
   }
 
-.presentation__titreun {
+.presentation__article--titreun {
     font-size: 50px;   
 }
-.presentation__logo > img {
+.presentation__article--logo > img {
     width: 160px;
 }
 .presentation__premierparagraphe-bold {
     font-size: 20px;
 }
 
-.presentation__titredeux {
+.presentation__sysnopsis__titre-deux {
     font-size: 40px;
     color: var(--main-color);
 }
-.presentation__premierparagraphe {
+.presentation__article--premier-paragraphe {
     padding-bottom: 30px;
     font-size: 17px;
     border-bottom: 1px solid #000000;
 }
 
-.presentation__deuxiemeparagraphe {
+.presentation__article-deuxieme-paragraphe {
     text-align: center;
     font-size: 15px;
     font-style: italic;
@@ -112,19 +112,19 @@
 
 /**********REGROUPEMENT DE STYLE************/
 
-.presentation__premierparagraphe-bold, .presentation__titreun, .presentation__titredeux {
+.presentation__premierparagraphe-bold, .presentation__article--titreun, .presentation__sysnopsis__titre-deux {
     font-weight: 600;
 }
 
-.presentation__logo, .presentation__deuxiemeparagraphe, .presentation__titreun {
+.presentation__article--logo, .presentation__article-deuxieme-paragraphe, .presentation__article--titreun {
     margin: 20px 0px;
 }
 
-.presentation__titreun, .presentation__titredeux, .bold, .presentation__premierparagraphe {
+.presentation__article--titreun, .presentation__sysnopsis__titre-deux, .bold, .presentation__article--premier-paragraphe {
     font-family: var(--main-font);
 }
 
-.presentation__premierparagraphe, .presentation__deuxiemeparagraphe, .troisiemeparagraphe, .presentation__quatriemparagraphe, .presentation__cinquiemeparagraphe {
+.presentation__article--premier-paragraphe, .presentation__article-deuxieme-paragraphe, .presentation__sysnopsis__troisieme-paragraphe, .presentation__sysnopsis__quatrieme-paragraphe, .presentation__sysnopsis__cinquieme-paragraphe {
     font-family: var(--main-font);
     font-weight: 400;
     margin: 20px 0px;
@@ -136,11 +136,11 @@
 .acteur {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    font-family: 'Oswald', sans-serif;
+    font-family: var(--main-font);
     font-weight: 400;
-    margin-bottom: 20px;
+    margin: 20px 20px;
+    width: 100vw;
 }
 
 .acteur__nom {
@@ -171,49 +171,78 @@
     margin: 20px 0px;    
 }
 
+/**********Téléphone ou tablette************/
+
+@media (max-width: 700px) {
+    .acteur__nom {
+        width: 400px;
+
+    }
+    
+}
+@media (max-width: 500px) {
+    .acteur__nom {
+        width: 250px;
+
+    }
+    
+}
+
 /**********************SECTION PHOTO***************************/
 
-.photo__détail {
-    display: flex;
-    justify-content: center;
-    margin: 40px;
+.photo {
     width: 100vw;
+    margin: 40px;
 }
+
 .photo h2 {
     font-weight: 600;
     font-size: 50px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.photo__détail {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
 }
 
 .photo__explication {
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    text-align: center;
     border: 1px solid rgb(155, 154, 154);
-    width: 25%;
-    padding: 15px;
-
+    width: 20%;
+    padding: 20px;
+    overflow: hidden;
+    
 }
 
 .photo__explication__image {
-    text-align: center;
+    width: 365px;
+    height: 250px;
+    margin: 0 auto;
+    border: 1px solid rgb(155, 154, 154);
+    transition: transform ease-in-out 300ms;
+  
 }
 
 .photo__explication__image img {
-    width: 250px;
-    height: 190px;
-    padding: 10px;
-    transition: transform ease-in-out 300ms;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
 }
-.photo__explication__image img:hover {
+.photo__explication__image:hover {
     transform: scale(1.1);
 }
 
 .photo__explication__titre {
     font-weight: 600;
     font-size: 30px;
-    padding: 5px;
+    padding: 15px 0 15px 0;
     text-align: center;
     color: var(--main-color);
 }
@@ -224,22 +253,58 @@
     padding: 10px;
 }
 
+/**********REGROUPEMENT DE STYLE************/
+
 .photo h2, .photo__explication__titre, .photo__explication__titre + p {
     font-family: var(--main-font);
 }
 
+/**********Téléphone ou tablette************/
+
+@media (max-width: 1920px) {
+    .photo__détail {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;    
+    }
+    .photo__explication {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border: 1px solid rgb(155, 154, 154);
+        width: 100%;
+        padding: 20px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .photo__détail {
+        display: none;
+    
+    }
+    .photo h2 {
+        display: none;
+    }
+}
+
 
 /**********************FOOTER***************************/
-
-.footer__text {
+footer {
     display: flex;
     justify-content: center;
-    align-items: center;
+    width: 100vw;
+    margin: 0 20px;
+}
+
+.footer__text {
+    width: 100%;
     text-align: center;
     font-family: var(--main-font);
     font-weight: 400;
     background-color: #EEEEEE;
-    padding-top: 20px;
-    padding-bottom: 70px;
+    margin: 0;
+    padding: 50px;
 }
 
