@@ -1,11 +1,15 @@
+:root {
+    --main-font: 'Oswald', sans-serif;
+    --main-color: #5A010C;
+}
+
+
 /**********************HEADER***************************/
 
 .header {
     flex-direction: column;
-    justify-content: center;
 }
 .hearder__logo {
-    justify-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -16,8 +20,6 @@
 }
 
 .header__titre--normal {
-    font-family: 'Oswald', sans-serif;
-    justify-content: center;
     align-items: center;
     font-weight: 600;
     letter-spacing: .2rem;
@@ -26,8 +28,6 @@
 }
 
 .header__titre--black {
-    font-family: 'Oswald', sans-serif;
-    justify-content: center;
     margin-left: 20px;
     font-size: 20px;
     padding: 9px 18px;
@@ -41,7 +41,7 @@
 .header__titre::after {
     content: "";
     height: 3px;
-    background-color: #5A010C;
+    background-color: var(--main-color);
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -51,11 +51,16 @@
 .header__titre::before {
     content: "";
     height: 3px;
-    background-color: #5A010C;
+    background-color: var(--main-color);
     position: absolute;
     top: 0;
     width: 100%;
 
+}
+/**********REGROUPEMENT DE STYLE************/
+
+.header__titre--normal, .header__titre--black {
+    font-family: var(--main-font);
 }
 
 .header, .hearder__logo, .header__titre {
@@ -63,6 +68,9 @@
     position: relative;
 }
 
+.header, .hearder__logo, .header__titre--normal, .header__titre--black {
+    justify-content: center;
+} 
 
 /**********************SECTION PRESENTATION***************************/
 
@@ -77,21 +85,18 @@
   }
 
 .presentation__titreun {
-    font-weight: 600;
     font-size: 50px;   
 }
 .presentation__logo > img {
     width: 160px;
 }
-.bold {
-    font-weight: 600;
+.presentation__premierparagraphe-bold {
     font-size: 20px;
 }
 
 .presentation__titredeux {
     font-size: 40px;
-    color: #5A010C;
-    font-weight: 600;
+    color: var(--main-color);
 }
 .presentation__premierparagraphe {
     padding-bottom: 30px;
@@ -104,16 +109,23 @@
     font-size: 15px;
     font-style: italic;
 }
+
+/**********REGROUPEMENT DE STYLE************/
+
+.presentation__premierparagraphe-bold, .presentation__titreun, .presentation__titredeux {
+    font-weight: 600;
+}
+
 .presentation__logo, .presentation__deuxiemeparagraphe, .presentation__titreun {
     margin: 20px 0px;
 }
 
 .presentation__titreun, .presentation__titredeux, .bold, .presentation__premierparagraphe {
-    font-family: 'Oswald', sans-serif;
+    font-family: var(--main-font);
 }
 
 .presentation__premierparagraphe, .presentation__deuxiemeparagraphe, .troisiemeparagraphe, .presentation__quatriemparagraphe, .presentation__cinquiemeparagraphe {
-    font-family: 'Oswald', sans-serif;
+    font-family: var(--main-font);
     font-weight: 400;
     margin: 20px 0px;
     font-size: 17px;
@@ -137,7 +149,7 @@
     background-color: #EEEEEE;
     width: 600px;
     margin: 5px;
-    color: #750000;
+    color: var(--main-color);
     font-size: 20px;
     padding: 5px;
     border-radius: 15px;
@@ -153,7 +165,7 @@
 }
 
 .acteur__titre {
-    font-family: 'Oswald', sans-serif;
+    font-family: var(--main-font);
     font-weight: 400;
     font-size: 50px;
     margin: 20px 0px;    
@@ -203,7 +215,7 @@
     font-size: 30px;
     padding: 5px;
     text-align: center;
-    color: #750000;
+    color: var(--main-color);
 }
 .photo__explication__titre + p {
     font-weight: 400;
@@ -213,7 +225,7 @@
 }
 
 .photo h2, .photo__explication__titre, .photo__explication__titre + p {
-    font-family: 'Oswald', sans-serif;
+    font-family: var(--main-font);
 }
 
 
@@ -224,7 +236,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: 'Oswald', sans-serif;
+    font-family: var(--main-font);
     font-weight: 400;
     background-color: #EEEEEE;
     padding-top: 20px;
