@@ -2,7 +2,25 @@
     --main-font: 'Oswald', sans-serif;
     --main-color: #5A010C;
 }
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: gray;
+}
 
+* {
+    box-sizing: border-box;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 100px;
+    background-color: white;
+    padding: 20px;
+    height: 100%;
+}
 
 /**********************HEADER***************************/
 
@@ -79,9 +97,16 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: #EEEEEE;
-    margin: 20px 20px;
-    width: 100vw;
+    border: 3px solid blue;
+  }
+
+  .presentation__article, .presentation__sysnopsis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+
   }
 
 .presentation__article--titreun {
@@ -140,7 +165,7 @@
     font-family: var(--main-font);
     font-weight: 400;
     margin: 20px 20px;
-    width: 100vw;
+    border: 3px solid red;
 }
 
 .acteur__nom {
@@ -191,8 +216,7 @@
 /**********************SECTION PHOTO***************************/
 
 .photo {
-    width: 100vw;
-    margin: 40px;
+    border: 3px solid green;
 }
 
 .photo h2 {
@@ -304,7 +328,6 @@ footer {
     font-family: var(--main-font);
     font-weight: 400;
     background-color: #EEEEEE;
-    margin: 0;
     padding: 50px;
 }
 
