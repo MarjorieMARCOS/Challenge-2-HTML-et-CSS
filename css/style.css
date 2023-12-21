@@ -7,6 +7,8 @@ body {
     C'est intéressant que si tu veux que le contenu soit visible 
     sur l'écran sans qu'on ait besoin de scroller
     */
+
+
     display: flex;
     flex-direction: column;
     margin: 0;
